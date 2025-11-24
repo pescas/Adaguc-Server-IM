@@ -117,7 +117,7 @@ services:
     hostname: nginx-adaguc
     ports:
       - "${ADAGUC_PORT}:443"
-      - "8081:80"
+      - "${ADAGUC_HTTP_PORT}:80"
     networks:
       - adaguc-network
     environment:
