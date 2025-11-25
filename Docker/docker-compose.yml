@@ -52,9 +52,6 @@ services:
         build: nginx-adaguc
         container_name: nginx-adaguc
         hostname: nginx-adaguc
-        ports:
-            - "4430:443"
-            - "8081:80"
         networks:
             - adaguc-network
         environment: 
